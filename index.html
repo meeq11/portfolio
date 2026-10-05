@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moje Portfolio — Figma Designer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<nav>
+  <a href="#" class="nav-logo">MP*</a>
+  <ul class="nav-links">
+    <li><a href="#work" data-i18n="nav-work">Work</a></li>
+    <li><a href="#about" data-i18n="nav-about">About</a></li>
+    <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+  </ul>
+  <button id="lang-switch" aria-label="Switch language">
+    <span id="lang-label">PL</span>
+  </button>
+</nav>
+
+<section id="hero">
+  <canvas id="pixel-canvas"></canvas>
+  <div class="hero-inner">
+    <p class="hero-eyebrow" data-i18n="hero-eyebrow">Figma Designer &amp; UI/UX</p>
+    <h1 class="hero-title">MOJE<br><span class="light">PORT</span><br>FOLIO</h1>
+    <p class="hero-subtitle" data-i18n="hero-sub">Projekty z pasją · Kraków, PL</p>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span data-i18n="scroll">scroll</span>
+  </div>
+</section>
+
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">UI Design<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Figma<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Prototyping<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Design Systems<span class="marquee-dot"></span></span>
+    <span class="marquee-item">UX Research<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Branding<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Motion<span class="marquee-dot"></span></span>
+    <span class="marquee-item">UI Design<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Figma<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Prototyping<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Design Systems<span class="marquee-dot"></span></span>
+    <span class="marquee-item">UX Research<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Branding<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Motion<span class="marquee-dot"></span></span>
+  </div>
+</div>
+
+<section id="about">
+  <div class="about-text">
+    <p class="about-label" data-i18n="about-label">[00] O mnie</p>
+    <h2 class="about-heading" data-i18n="about-heading">Tworzę interfejsy, które <em>zostają w głowie</em>.</h2>
+    <p class="about-body" data-i18n="about-body">Cześć — projektant UI/UX z Krakowa. Specjalizuję się w projektowaniu produktów cyfrowych w Figmie — od wireframe'ów po gotowe design systemy. Każdy projekt to balans między estetyką a użytecznością.</p>
+  </div>
+  <div class="about-stats">
+    <div class="stat"><div class="stat-num">3+</div><div class="stat-label" data-i18n="stat-exp">Lata exp.</div></div>
+    <div class="stat"><div class="stat-num">20+</div><div class="stat-label" data-i18n="stat-proj">Projektów</div></div>
+    <div class="stat"><div class="stat-num">12</div><div class="stat-label" data-i18n="stat-clients">Klientów</div></div>
+    <div class="stat"><div class="stat-num">∞</div><div class="stat-label" data-i18n="stat-coffee">Kawy</div></div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="section-header">
+    <h2 class="section-title" data-i18n="work-title">Wybrane projekty</h2>
+    <span class="section-count">[ 03 ]</span>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img class="project-img" src="https://www.dropbox.com/scl/fi/1aq1jeug0zdje451ik7kb/pgreen.png?rlkey=48xfrs8msuxe9roqoqp4ajo38&dl=1" alt="Projekt 1" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="project-placeholder" style="display:none"><div class="ph-inner"><div class="ph-num">01</div><div class="ph-label" data-i18n="proj-label">Projekt</div></div></div>
+      <div class="project-overlay"></div>
+      <div class="project-info"><span class="project-tag">UI / Figma · 2024</span><div class="project-name" data-i18n="proj1-name">Projekt Główny</div></div>
+    </div>
+    <div class="project-card">
+      <div class="project-placeholder"><div class="ph-inner"><div class="ph-num">02</div><div class="ph-label" data-i18n="proj-label">Projekt</div></div></div>
+      <div class="project-overlay"></div>
+      <div class="project-info"><span class="project-tag">Branding · 2024</span><div class="project-name" data-i18n="proj2-name">Projekt Drugi</div></div>
+    </div>
+    <div class="project-card">
+      <div class="project-placeholder"><div class="ph-inner"><div class="ph-num">03</div><div class="ph-label" data-i18n="proj-label">Projekt</div></div></div>
+      <div class="project-overlay"></div>
+      <div class="project-info"><span class="project-tag">Design System · 2023</span><div class="project-name" data-i18n="proj3-name">Projekt Trzeci</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-header">
+    <h2 class="section-title" data-i18n="services-title">Co robię</h2>
+    <span class="section-count">[ 03 ]</span>
+  </div>
+  <div class="services-grid">
+    <div class="service">
+      <div class="service-num">01 —</div>
+      <div class="service-name">UI / UX Design</div>
+      <p class="service-desc" data-i18n="s1-desc">Projektuję intuicyjne interfejsy — od research przez wireframy po pixel-perfect gotowe ekrany w Figmie.</p>
+    </div>
+    <div class="service">
+      <div class="service-num">02 —</div>
+      <div class="service-name">Design Systems</div>
+      <p class="service-desc" data-i18n="s2-desc">Buduję skalowalne systemy komponentów, które trzymają spójność wizualną w całym produkcie.</p>
+    </div>
+    <div class="service">
+      <div class="service-num">03 —</div>
+      <div class="service-name" data-i18n="s3-name">Identyfikacja wizualna</div>
+      <p class="service-desc" data-i18n="s3-desc">Logo, typografia, paleta — tworzę marki z charakterem, które wyróżniają się na rynku.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <p class="contact-label" data-i18n="contact-label">Masz projekt? Porozmawiajmy.</p>
+  <h2 class="contact-heading" data-i18n="contact-heading">ZACZNIJ<br>PROJEKT</h2>
+  <a href="#" id="open-contact" class="contact-btn" data-i18n="contact-btn">Napisz do mnie →</a>
+</section>
+
+<div class="modal" id="contact-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-box">
+    <button type="button" class="modal-close" id="close-contact" aria-label="Zamknij">&times;</button>
+    <h3 class="modal-title" id="modal-title" data-i18n="form-title">Napisz do mnie</h3>
+    <form id="contact-form" action="https://formspree.io/f/TWOJ_ID" method="POST" novalidate>
+      <div class="field">
+        <label for="f-name" data-i18n="form-name">Imię i nazwisko</label>
+        <input type="text" id="f-name" name="name" required autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="f-email" data-i18n="form-email">Twój e-mail</label>
+        <input type="email" id="f-email" name="email" required autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="f-message" data-i18n="form-message">Co chcesz zrobić?</label>
+        <textarea id="f-message" name="message" rows="5" required></textarea>
+      </div>
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off">
+      <button type="submit" class="submit-btn" id="submit-btn" data-i18n="form-send">Wyślij →</button>
+      <p class="form-status" id="form-status" role="status"></p>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <span class="footer-copy">© 2025 — Portfolio</span>
+  <ul class="footer-links">
+    <li><a href="#">Behance</a></li>
+    <li><a href="#">LinkedIn</a></li>
+    <li><a href="#">Dribbble</a></li>
+  </ul>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
