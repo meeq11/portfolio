@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projekt — Moje Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="subpage">
+
+<nav>
+  <a href="index.html" class="nav-logo">MP*</a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+    <li><a href="projects.html" class="active" data-i18n="nav-work">Work</a></li>
+    <li><a href="index.html#about" data-i18n="nav-about">About</a></li>
+    <li><a href="index.html#contact" data-i18n="nav-contact">Contact</a></li>
+  </ul>
+  <button id="lang-switch" aria-label="Switch language">
+    <span id="lang-label">EN</span>
+  </button>
+</nav>
+
+<main id="project-page"></main>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Zamknij">&times;</button>
+  <img id="lightbox-img" alt="">
+</div>
+
+<footer>
+  <span class="footer-copy">© 2025 — Portfolio</span>
+  <ul class="footer-links">
+    <li><a href="#">Behance</a></li>
+    <li><a href="#">LinkedIn</a></li>
+    <li><a href="#">Dribbble</a></li>
+  </ul>
+</footer>
+
+<script src="assets/js/project.js" defer></script>
+</body>
+</html>

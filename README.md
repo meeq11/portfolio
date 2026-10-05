@@ -21,10 +21,12 @@ HTML5 · CSS3 · JavaScript (vanilla) · Figma
 .
 ├── index.html
 ├── projects.html
+├── project.html          (szablon podstrony projektu: project.html?id=1)
 ├── assets/
 │   ├── css/style.css
 │   ├── js/main.js
 │   ├── js/projects.js
+│   ├── js/project.js        (dane projektów edytujesz tutaj)
 │   └── img/
 └── README.md
 ```
