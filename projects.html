@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projekty — Moje Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="subpage">
+
+<nav>
+  <a href="index.html" class="nav-logo">MP*</a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+    <li><a href="projects.html" class="active" data-i18n="nav-work">Work</a></li>
+    <li><a href="index.html#about" data-i18n="nav-about">About</a></li>
+    <li><a href="index.html#contact" data-i18n="nav-contact">Contact</a></li>
+  </ul>
+  <button id="lang-switch" aria-label="Switch language">
+    <span id="lang-label">EN</span>
+  </button>
+</nav>
+
+<main id="projects-page">
+  <header class="page-header">
+    <p class="page-eyebrow" data-i18n="pg-eyebrow">Portfolio</p>
+    <h1 class="page-title" data-i18n="pg-title">Projekty</h1>
+    <p class="page-lead" data-i18n="pg-lead">Wybór prac z zakresu UI/UX, brandingu i web designu.</p>
+  </header>
+
+  <div class="filters" role="tablist">
+    <button class="filter active" data-filter="all" data-i18n="f-all">Wszystkie</button>
+    <button class="filter" data-filter="ui" data-i18n="f-ui">UI / UX</button>
+    <button class="filter" data-filter="branding" data-i18n="f-branding">Branding</button>
+    <button class="filter" data-filter="web" data-i18n="f-web">Web</button>
+  </div>
+
+  <section class="pgrid" id="pgrid">
+
+      <article class="pcard" data-cat="ui">
+        <a class="pcard-media" href="#" aria-label="Projekt Główny">
+        <img class="pcard-img" src="https://www.dropbox.com/scl/fi/1aq1jeug0zdje451ik7kb/pgreen.png?rlkey=48xfrs8msuxe9roqoqp4ajo38&dl=1" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="project-placeholder" style="display:none"><div class="ph-inner"><div class="ph-num">01</div></div></div>
+        </a>
+        <div class="pcard-body">
+          <span class="project-tag pcard-tag">UI / Figma · 2024</span>
+          <h3 class="pcard-name" data-i18n="p1-name">Projekt Główny</h3>
+          <p class="pcard-desc" data-i18n="p1-desc">Interfejs aplikacji mobilnej — od wireframe'ów po gotowy prototyp.</p>
+          <a class="pcard-link" href="#" data-i18n="p-view">Zobacz projekt →</a>
+        </div>
+      </article>
+
+      <article class="pcard" data-cat="branding">
+        <a class="pcard-media" href="#" aria-label="Projekt Drugi">
+        <div class="project-placeholder"><div class="ph-inner"><div class="ph-num">02</div></div></div>
+        </a>
+        <div class="pcard-body">
+          <span class="project-tag pcard-tag">Branding · 2024</span>
+          <h3 class="pcard-name" data-i18n="p2-name">Projekt Drugi</h3>
+          <p class="pcard-desc" data-i18n="p2-desc">Identyfikacja wizualna: logo, paleta kolorów i typografia.</p>
+          <a class="pcard-link" href="#" data-i18n="p-view">Zobacz projekt →</a>
+        </div>
+      </article>
+
+      <article class="pcard" data-cat="ui">
+        <a class="pcard-media" href="#" aria-label="Projekt Trzeci">
+        <div class="project-placeholder"><div class="ph-inner"><div class="ph-num">03</div></div></div>
+        </a>
+        <div class="pcard-body">
+          <span class="project-tag pcard-tag">Design System · 2023</span>
+          <h3 class="pcard-name" data-i18n="p3-name">Projekt Trzeci</h3>
+          <p class="pcard-desc" data-i18n="p3-desc">Biblioteka komponentów w Figmie dla zespołu produktowego.</p>
+          <a class="pcard-link" href="#" data-i18n="p-view">Zobacz projekt →</a>
+        </div>
+      </article>
+
+      <article class="pcard" data-cat="web">
+        <a class="pcard-media" href="#" aria-label="Projekt Czwarty">
+        <div class="project-placeholder"><div class="ph-inner"><div class="ph-num">04</div></div></div>
+        </a>
+        <div class="pcard-body">
+          <span class="project-tag pcard-tag">Web · 2024</span>
+          <h3 class="pcard-name" data-i18n="p4-name">Projekt Czwarty</h3>
+          <p class="pcard-desc" data-i18n="p4-desc">Responsywna strona internetowa w HTML, CSS i JavaScript.</p>
+          <a class="pcard-link" href="#" data-i18n="p-view">Zobacz projekt →</a>
+        </div>
+      </article>
+
+      <article class="pcard" data-cat="branding">
+        <a class="pcard-media" href="#" aria-label="Projekt Piąty">
+        <div class="project-placeholder"><div class="ph-inner"><div class="ph-num">05</div></div></div>
+        </a>
+        <div class="pcard-body">
+          <span class="project-tag pcard-tag">Branding · 2023</span>
+          <h3 class="pcard-name" data-i18n="p5-name">Projekt Piąty</h3>
+          <p class="pcard-desc" data-i18n="p5-desc">Materiały graficzne i kampania w mediach społecznościowych.</p>
+          <a class="pcard-link" href="#" data-i18n="p-view">Zobacz projekt →</a>
+        </div>
+      </article>
+
+      <article class="pcard" data-cat="web">
+        <a class="pcard-media" href="#" aria-label="Projekt Szósty">
+        <div class="project-placeholder"><div class="ph-inner"><div class="ph-num">06</div></div></div>
+        </a>
+        <div class="pcard-body">
+          <span class="project-tag pcard-tag">Web · 2023</span>
+          <h3 class="pcard-name" data-i18n="p6-name">Projekt Szósty</h3>
+          <p class="pcard-desc" data-i18n="p6-desc">Landing page z animacjami i formularzem kontaktowym.</p>
+          <a class="pcard-link" href="#" data-i18n="p-view">Zobacz projekt →</a>
+        </div>
+      </article>
+  </section>
+</main>
+
+<footer>
+  <span class="footer-copy">© 2025 — Portfolio</span>
+  <ul class="footer-links">
+    <li><a href="#">Behance</a></li>
+    <li><a href="#">LinkedIn</a></li>
+    <li><a href="#">Dribbble</a></li>
+  </ul>
+</footer>
+
+<script src="assets/js/projects.js" defer></script>
+</body>
+</html>

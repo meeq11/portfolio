@@ -168,6 +168,7 @@ const translations = {
     'stat-clients':    'Klientów',
     'stat-coffee':     'Kawy',
     'work-title':      'Wybrane projekty',
+    'work-all':        'Wszystkie projekty →',
     'proj-label':      'Projekt',
     'proj1-name':      'Projekt Główny',
     'proj2-name':      'Projekt Drugi',
@@ -206,6 +207,7 @@ const translations = {
     'stat-clients':    'Clients',
     'stat-coffee':     'Coffees',
     'work-title':      'Selected work',
+    'work-all':        'All projects →',
     'proj-label':      'Project',
     'proj1-name':      'Main Project',
     'proj2-name':      'Second Project',
@@ -243,6 +245,7 @@ function applyLang(lang){
   const fc = document.querySelector('.footer-copy');
   if(fc) fc.innerHTML = dict['footer-copy'];
   document.documentElement.lang = lang;
+  try{ localStorage.setItem('lang', lang); }catch(e){}
   document.getElementById('lang-label').textContent = lang === 'pl' ? 'EN' : 'PL';
   currentLang = lang;
 }
@@ -315,3 +318,6 @@ form.addEventListener('submit',async e=>{
   }
   sendBtn.disabled = false;
 });
+
+// Zapamiętany język (wspólny dla wszystkich podstron)
+try{ if(localStorage.getItem('lang')==='en') applyLang('en'); }catch(e){}

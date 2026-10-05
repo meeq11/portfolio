@@ -20,9 +20,11 @@ HTML5 · CSS3 · JavaScript (vanilla) · Figma
 ```
 .
 ├── index.html
+├── projects.html
 ├── assets/
 │   ├── css/style.css
 │   ├── js/main.js
+│   ├── js/projects.js
 │   └── img/
 └── README.md
 ```

@@ -540,3 +540,83 @@ footer{
   .projects-grid{grid-template-columns:1fr}
   .project-card:first-child{aspect-ratio:4/3}
 }
+
+
+/* PROJECTS PAGE */
+.nav-links a.active{opacity:1}
+body.subpage nav{position:fixed}
+#projects-page{
+  max-width:1200px;margin:0 auto;
+  padding:140px 40px 120px;
+}
+.page-header{margin-bottom:48px}
+.page-eyebrow{
+  font-size:11px;letter-spacing:0.3em;text-transform:uppercase;
+  color:var(--mid);margin-bottom:16px;
+}
+.page-title{
+  font-family:'Unbounded',sans-serif;font-weight:900;
+  font-size:clamp(2.2rem,6vw,4.5rem);letter-spacing:-0.03em;
+  color:var(--accent);line-height:1;margin-bottom:20px;
+}
+.page-lead{font-size:14px;line-height:1.7;color:var(--mid);max-width:520px}
+
+.filters{
+  display:flex;flex-wrap:wrap;gap:10px;
+  margin-bottom:40px;padding-bottom:24px;
+  border-bottom:1px solid rgba(2,48,32,0.12);
+}
+.filter{
+  background:none;cursor:pointer;
+  font-family:'Space Mono',monospace;font-size:11px;
+  letter-spacing:0.15em;text-transform:uppercase;
+  color:var(--accent);
+  border:1.5px solid rgba(2,48,32,0.25);border-radius:0;
+  padding:9px 18px;
+  transition:background 0.2s,color 0.2s,border-color 0.2s;
+}
+.filter:hover,.filter.active{
+  background:var(--accent);color:#EBE7E1;border-color:var(--accent);
+}
+
+.pgrid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+  gap:32px;
+}
+.pcard{display:flex;flex-direction:column}
+.pcard.hide{display:none}
+.pcard-media{
+  display:block;position:relative;overflow:hidden;
+  aspect-ratio:4/3;background:var(--card);
+}
+.pcard-img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  filter:saturate(80%);
+  transition:transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94),filter 0.4s;
+}
+.pcard:hover .pcard-img{transform:scale(1.05);filter:saturate(100%)}
+.pcard-media .project-placeholder{transition:background 0.3s}
+.pcard:hover .pcard-media .project-placeholder{background:var(--gray)}
+.pcard-body{padding:20px 0 0}
+.pcard-tag{color:var(--mid);margin-bottom:8px}
+.pcard-name{
+  font-family:'Unbounded',sans-serif;font-weight:700;
+  font-size:1.15rem;letter-spacing:-0.01em;
+  color:var(--accent);margin-bottom:10px;
+}
+.pcard-desc{font-size:12.5px;line-height:1.7;color:var(--mid);margin-bottom:16px}
+.pcard-link{
+  font-size:11px;letter-spacing:0.15em;text-transform:uppercase;
+  color:var(--accent);text-decoration:none;
+  border-bottom:1px solid transparent;transition:border-color 0.2s;
+}
+.pcard-link:hover{border-bottom-color:var(--accent)}
+
+@media(max-width:768px){
+  #projects-page{padding:110px 20px 80px}
+  .pgrid{grid-template-columns:1fr;gap:28px}
+}
+
+.section-all{color:var(--accent);text-decoration:none;text-transform:uppercase;border-bottom:1px solid transparent;transition:border-color 0.2s}
+.section-all:hover{border-bottom-color:var(--accent)}
