@@ -693,7 +693,8 @@ body.subpage nav{position:fixed}
 
 .proj-nav{
   display:flex;justify-content:space-between;gap:24px;
-  padding:28px 0;margin-bottom:72px;
+  max-width:640px;margin:0 auto 72px;
+  padding:28px 0;
   border-top:1px solid rgba(2,48,32,0.12);
   border-bottom:1px solid rgba(2,48,32,0.12);
 }

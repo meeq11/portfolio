@@ -156,10 +156,10 @@ function render(){
       <div class="proj-block"><h2>${u.result}</h2><p>${esc(t.result)}</p></div>
     </section>
 
-    <nav class="proj-nav" aria-label="${u.gallery}">
+    <div class="proj-nav">
       <a href="project.html?id=${prev.id}">${u.prev}</a>
       <a href="project.html?id=${next.id}">${u.next}</a>
-    </nav>
+    </div>
 
     <section class="proj-cta">
       <p>${u.cta}</p>
