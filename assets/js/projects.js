@@ -1,7 +1,7 @@
 // Podstrona Projekty: tłumaczenia PL/EN, filtry kategorii, animacja kart
 const T = {
   pl: {
-    'nav-home':'Home','nav-work':'Work','nav-about':'About','nav-contact':'Contact',
+    'nav-home':'Strona Główna','nav-work':'Projekty','nav-about':'O Mnie','nav-contact':'Kontakt',
     'pg-eyebrow':'Portfolio','pg-title':'Projekty',
     'pg-lead':'Wybór prac z zakresu UI/UX, brandingu i web designu.',
     'f-all':'Wszystkie','f-ui':'UI / UX','f-branding':'Branding','f-web':'Web',

@@ -5,7 +5,7 @@
 
 const UI = {
   pl: {
-    'nav-home':'Home','nav-work':'Work','nav-about':'About','nav-contact':'Contact',
+    'nav-home':'Strona Główna','nav-work':'Projekty','nav-about':'O Mnie','nav-contact':'Kontakt',
     back:'← Wszystkie projekty',
     year:'Rok', role:'Rola', tools:'Narzędzia', duration:'Czas',
     goal:'Cel', process:'Proces', result:'Rezultat', gallery:'Galeria',
@@ -27,7 +27,7 @@ const UI = {
 const COVER_1 = 'https://www.dropbox.com/scl/fi/1aq1jeug0zdje451ik7kb/pgreen.png?rlkey=48xfrs8msuxe9roqoqp4ajo38&dl=1';
 
 const PROJECTS = [
-  { id:1, tag:'UI / Figma', year:'2024', duration:'8 tyg. / 8 wks', tools:'Figma, FigJam', cover:COVER_1,
+  { id:1, tag:'UI / Figma', year:'2024', duration:'8 tyg. / 8 wks', tools:'Figma, FigJam',
     pl:{ name:'Projekt Główny', role:'UI/UX Designer',
       lead:'Interfejs aplikacji mobilnej — od wireframe\'ów po gotowy, klikalny prototyp.',
       goal:'Aplikacja miała ułatwić użytkownikom codzienne zadania i skrócić ścieżkę do najważniejszych funkcji. Zaczęliśmy od analizy potrzeb i przeglądu rozwiązań konkurencji.',
