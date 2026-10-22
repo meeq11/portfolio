@@ -1,6 +1,7 @@
 // Podstrona pojedynczego projektu: project.html?id=1
 // Dane projektów edytujesz w obiekcie PROJECTS poniżej.
-// Zdjęcia: assets/img/projekt-N/cover.jpg oraz 1.jpg, 2.jpg, 3.jpg, 4.jpg
+// Zdjęcia: assets/img/projekt-N/cover.jpg oraz 1.jpg ... 4.jpg (galeria).
+// gallery: ile zdjęć galerii ma projekt (0 = bez galerii, max 4). year jest opcjonalny.
 // (brakujące zdjęcia zastępuje automatycznie szary placeholder).
 
 const UI = {
@@ -11,7 +12,7 @@ const UI = {
     goal:'Cel', process:'Proces', result:'Rezultat', gallery:'Galeria',
     next:'Następny projekt →', prev:'← Poprzedni projekt',
     cta:'Podoba Ci się ten projekt?', ctaBtn:'Napisz do mnie →',
-    footer:'© 2025 — Portfolio', title:'Projekt'
+    footer:'© 2026 — Max', title:'Projekt'
   },
   en: {
     'nav-home':'Home','nav-work':'Work','nav-about':'About','nav-contact':'Contact',
@@ -20,79 +21,44 @@ const UI = {
     goal:'Goal', process:'Process', result:'Result', gallery:'Gallery',
     next:'Next project →', prev:'← Previous project',
     cta:'Like what you see?', ctaBtn:'Get in touch →',
-    footer:'© 2025 — Portfolio', title:'Project'
+    footer:'© 2026 — Max', title:'Project'
   }
 };
 
-const COVER_1 = 'https://www.dropbox.com/scl/fi/1aq1jeug0zdje451ik7kb/pgreen.png?rlkey=48xfrs8msuxe9roqoqp4ajo38&dl=1';
-
 const PROJECTS = [
-  { id:1, tag:'UI / Figma', year:'2024', duration:'8 tyg. / 8 wks', tools:'Figma, FigJam',
-    pl:{ name:'Projekt Główny', role:'UI/UX Designer',
-      lead:'Interfejs aplikacji mobilnej — od wireframe\'ów po gotowy, klikalny prototyp.',
-      goal:'Aplikacja miała ułatwić użytkownikom codzienne zadania i skrócić ścieżkę do najważniejszych funkcji. Zaczęliśmy od analizy potrzeb i przeglądu rozwiązań konkurencji.',
-      process:'Powstały szkice, wireframe\'y niskiej i wysokiej szczegółowości, a następnie pełny design w Figmie z biblioteką komponentów. Prototyp przetestowałem z kilkoma osobami i na tej podstawie uprościłem nawigację.',
-      result:'Spójny interfejs z jasną hierarchią i przejrzystym układem. Prototyp gotowy do przekazania deweloperom wraz z dokumentacją komponentów.' },
-    en:{ name:'Main Project', role:'UI/UX Designer',
-      lead:'Mobile app interface — from wireframes to a finished, clickable prototype.',
-      goal:'The app was meant to simplify everyday tasks and shorten the path to the most important features. We started with a needs analysis and a review of competing solutions.',
-      process:'I produced sketches, low- and high-fidelity wireframes, then the full design in Figma with a component library. The prototype was tested with a few people and the navigation was simplified based on their feedback.',
-      result:'A consistent interface with clear hierarchy and a clean layout. The prototype was ready to hand over to developers together with component documentation.' } },
-  { id:2, tag:'Branding', year:'2024', duration:'5 tyg. / 5 wks', tools:'Figma, Illustrator',
-    pl:{ name:'Projekt Drugi', role:'Brand Designer',
-      lead:'Identyfikacja wizualna: logo, paleta kolorów i typografia.',
-      goal:'Stworzenie rozpoznawalnej marki, która wyróżni się na tle konkurencji i będzie działać zarówno online, jak i w druku.',
-      process:'Zacząłem od warsztatu wartości marki, potem tablice inspiracji, szkice logo i kilka kierunków kolorystycznych. Wybrany kierunek rozwinąłem w pełny system znaków.',
-      result:'Kompletny zestaw: logo w wariantach, paleta, typografia i przykładowe zastosowania. Całość zebrana w krótkiej księdze znaku.' },
-    en:{ name:'Second Project', role:'Brand Designer',
-      lead:'Visual identity: logo, colour palette and typography.',
-      goal:'Creating a recognisable brand that stands out from the competition and works both online and in print.',
-      process:'I started with a brand values workshop, then moodboards, logo sketches and several colour directions. The chosen direction was developed into a full identity system.',
-      result:'A complete set: logo variants, palette, typography and sample applications, all gathered in a short brand guideline.' } },
-  { id:3, tag:'Design System', year:'2023', duration:'10 tyg. / 10 wks', tools:'Figma',
-    pl:{ name:'Projekt Trzeci', role:'UI Designer',
-      lead:'Biblioteka komponentów w Figmie dla zespołu produktowego.',
-      goal:'Ujednolicenie wyglądu produktu i przyspieszenie pracy zespołu dzięki wspólnym, gotowym do użycia elementom.',
-      process:'Zrobiłem audyt istniejących ekranów, wyodrębniłem powtarzalne wzorce i zbudowałem tokeny, komponenty z wariantami oraz zasady ich użycia.',
-      result:'Biblioteka kilkudziesięciu komponentów z dokumentacją. Projektowanie nowych ekranów stało się wyraźnie szybsze i bardziej spójne.' },
-    en:{ name:'Third Project', role:'UI Designer',
-      lead:'A component library in Figma for a product team.',
-      goal:'Unifying the look of the product and speeding up the team\'s work with shared, ready-to-use elements.',
-      process:'I audited the existing screens, extracted repeating patterns and built tokens, components with variants and usage guidelines.',
-      result:'A library of dozens of documented components. Designing new screens became noticeably faster and more consistent.' } },
-  { id:4, tag:'Web', year:'2024', duration:'6 tyg. / 6 wks', tools:'Figma, HTML, CSS, JS',
-    pl:{ name:'Projekt Czwarty', role:'Web Designer & Developer',
-      lead:'Responsywna strona internetowa w HTML, CSS i JavaScript.',
-      goal:'Nowoczesna, szybka strona, która dobrze prezentuje ofertę i działa równie dobrze na telefonie i komputerze.',
-      process:'Projekt w Figmie, a następnie ręczne wdrożenie w czystym HTML, CSS i JS, z naciskiem na dostępność i wydajność.',
-      result:'Lekka, responsywna strona z płynnymi animacjami i czytelną strukturą. Gotowa do publikacji.' },
-    en:{ name:'Fourth Project', role:'Web Designer & Developer',
-      lead:'Responsive website built with HTML, CSS and JavaScript.',
-      goal:'A modern, fast website that presents the offer well and works equally well on phone and desktop.',
-      process:'Designed in Figma, then hand-coded in plain HTML, CSS and JS with a focus on accessibility and performance.',
-      result:'A lightweight, responsive website with smooth animations and a clear structure, ready to publish.' } },
-  { id:5, tag:'Branding', year:'2023', duration:'4 tyg. / 4 wks', tools:'Figma, Photoshop',
-    pl:{ name:'Projekt Piąty', role:'Graphic Designer',
-      lead:'Materiały graficzne i kampania w mediach społecznościowych.',
-      goal:'Zwiększenie zasięgów i rozpoznawalności marki dzięki spójnej, atrakcyjnej oprawie graficznej.',
-      process:'Opracowałem szablony postów, grafiki kampanijne i krótkie animacje, trzymając się jednego systemu wizualnego.',
-      result:'Zestaw szablonów gotowy do samodzielnego użycia przez klienta oraz spójna kampania na kilku kanałach.' },
-    en:{ name:'Fifth Project', role:'Graphic Designer',
-      lead:'Graphic assets and a social media campaign.',
-      goal:'Increasing reach and brand recognition through consistent, attractive visuals.',
-      process:'I created post templates, campaign graphics and short animations, all within a single visual system.',
-      result:'A set of templates the client can use independently, and a consistent campaign across several channels.' } },
-  { id:6, tag:'Web', year:'2023', duration:'3 tyg. / 3 wks', tools:'Figma, HTML, CSS, JS',
-    pl:{ name:'Projekt Szósty', role:'Web Designer & Developer',
-      lead:'Landing page z animacjami i formularzem kontaktowym.',
-      goal:'Jedna strona, której zadaniem jest przekonać odwiedzającego i skłonić go do kontaktu.',
-      process:'Wireframe, projekt w Figmie, a potem wdrożenie z animacjami przy przewijaniu i działającym formularzem wysyłającym wiadomości na e-mail.',
-      result:'Szybka strona typu landing page z jasnym wezwaniem do działania i prostym formularzem.' },
-    en:{ name:'Sixth Project', role:'Web Designer & Developer',
-      lead:'Landing page with animations and a contact form.',
-      goal:'A single page whose job is to convince the visitor and prompt them to get in touch.',
-      process:'Wireframe, Figma design, then implementation with scroll animations and a working form that sends messages by email.',
-      result:'A fast landing page with a clear call to action and a simple contact form.' } }
+  { id:1, tag:{pl:'Web', en:'Web'}, year:'2026', tools:'Figma, HTML, CSS, JavaScript', gallery:4,
+    pl:{ name:'Moje portfolio', role:'Projekt i kod',
+      lead:'Strona portfolio zaprojektowana w Figmie i napisana od zera w HTML, CSS i JavaScript.',
+      goal:'Stworzenie własnej strony, która pokaże moje projekty w jednym miejscu. Zależało mi na prostym, czytelnym układzie i wyrazistej typografii.',
+      process:'Najpierw zaprojektowałem układ w Figmie, a potem napisałem stronę od zera: efekt pikseli w nagłówku, przełącznik języka PL/EN, listę projektów z filtrami, podstrony projektów i formularz kontaktowy.',
+      result:'Responsywne portfolio w dwóch wersjach językowych, z podstronami projektów i formularzem, który wysyła wiadomości na e-mail.' },
+    en:{ name:'My portfolio', role:'Design & code',
+      lead:'A portfolio website designed in Figma and built from scratch with HTML, CSS and JavaScript.',
+      goal:'Creating my own website that shows my projects in one place. I wanted a simple, readable layout and expressive typography.',
+      process:'I designed the layout in Figma first, then built the site from scratch: a pixel effect in the header, a PL/EN language switch, a project list with filters, project pages and a contact form.',
+      result:'A responsive portfolio in two languages, with project pages and a form that sends messages by email.' } },
+  { id:2, tag:{pl:'UI / Figma', en:'UI / Figma'}, tools:'Figma', gallery:0,
+    pl:{ name:'WESSA', role:'Projekt interfejsu',
+      lead:'Projekt strony agencji handlowej z rowerami: strona główna, lista modeli, karta produktu, logowanie i koszyk.',
+      goal:'Zaprojektowanie nowoczesnej strony, na której łatwo znaleźć model roweru, zobaczyć jego opis i dodać go do koszyka.',
+      process:'W Figmie zrobiłem najważniejsze ekrany: stronę główną, listy rowerów, kartę produktu, logowanie i rejestrację, konto oraz koszyk. Menu, stopka i przyciski są komponentami, a kolory i style tekstu opierają się na zmiennych.',
+      result:'Spójny zestaw ekranów desktopowych, gotowy do dalszej pracy. Kolejnym krokiem jest wersja mobilna.' },
+    en:{ name:'WESSA', role:'Interface design',
+      lead:'Website design for a bicycle trading agency: home page, model list, product page, login and cart.',
+      goal:'Designing a modern website where it is easy to find a bike model, see its description and add it to the cart.',
+      process:'In Figma I designed the key screens: home page, bike lists, product page, login and registration, account and cart. The menu, footer and buttons are components, and colours and text styles are based on variables.',
+      result:'A consistent set of desktop screens, ready for further work. The next step is a mobile version.' } },
+  { id:3, tag:{pl:'Grafika', en:'Graphics'}, tools:'Figma', gallery:4,
+    pl:{ name:'Plakaty samochodowe', role:'Projekt graficzny',
+      lead:'Seria plakatów i tapet o samochodach sportowych w formie technicznej karty modelu.',
+      goal:'Projekt koncepcyjny wykonany dla własnej przyjemności: plakaty, które łączą duże zdjęcie auta z nazwą modelu, krótkim opisem i danymi technicznymi.',
+      process:'Do każdego samochodu przygotowałem układ ze zdjęciem, nagłówkiem, opisem i drobnymi elementami graficznymi. Testowałem kilka wersji kolorystycznych tła: kremową, ciemnozieloną, czerwoną i szarą.',
+      result:'Zestaw gotowych plakatów w kilku wariantach kolorystycznych, m.in. z Porsche 911 GT3 RS Manthey.' },
+    en:{ name:'Car posters', role:'Graphic design',
+      lead:'A series of posters and wallpapers about sports cars, styled as technical model cards.',
+      goal:'A concept project made for fun: posters that combine a large photo of the car with the model name, a short description and technical data.',
+      process:'For each car I prepared a layout with a photo, headline, description and small graphic elements. I tested several background colour versions: cream, dark green, red and grey.',
+      result:'A set of finished posters in several colour variants, including the Porsche 911 GT3 RS Manthey.' } }
 ];
 
 let lang = 'pl';
@@ -120,22 +86,23 @@ function render(){
   const base = `assets/img/projekt-${proj.id}/`;
   const cover = proj.cover || base + 'cover.jpg';
   const num = String(proj.id).padStart(2,'0');
-  const dur = proj.duration.split(' / ')[lang==='pl'?0:1];
+  
+  const galleryItems = [['1.jpg','01','shot-wide'],['2.jpg','02',''],['3.jpg','03',''],['4.jpg','04','shot-wide']].slice(0, proj.gallery === undefined ? 4 : proj.gallery);
+  const galleryHtml = galleryItems.length
+    ? `<section class="proj-gallery" aria-label="${u.gallery}">${galleryItems.map(g => shot(base + g[0], g[1], g[2])).join('')}</section>`
+    : '';
 
   document.getElementById('project-page').innerHTML = `
     <a class="back-link" href="projects.html">${u.back}</a>
 
     <header class="proj-hero">
-      <span class="project-tag proj-tag">${esc(proj.tag)} · ${proj.year}</span>
+      <span class="project-tag proj-tag">${esc(proj.tag[lang])}${proj.year ? ' · ' + proj.year : ''}</span>
       <h1 class="proj-title">${esc(t.name)}</h1>
       <p class="proj-lead">${esc(t.lead)}</p>
     </header>
 
     <dl class="proj-meta">
-      <div><dt>${u.year}</dt><dd>${proj.year}</dd></div>
-      <div><dt>${u.role}</dt><dd>${esc(t.role)}</dd></div>
-      <div><dt>${u.tools}</dt><dd>${esc(proj.tools)}</dd></div>
-      <div><dt>${u.duration}</dt><dd>${esc(dur)}</dd></div>
+      ${[[u.year, proj.year], [u.role, t.role], [u.tools, proj.tools]].filter(x => x[1]).map(x => `<div><dt>${x[0]}</dt><dd>${esc(x[1])}</dd></div>`).join('')}
     </dl>
 
     ${shot(cover, num, 'shot-cover')}
@@ -145,12 +112,7 @@ function render(){
       <div class="proj-block"><h2>${u.process}</h2><p>${esc(t.process)}</p></div>
     </section>
 
-    <section class="proj-gallery" aria-label="${u.gallery}">
-      ${shot(base+'1.jpg','01','shot-wide')}
-      ${shot(base+'2.jpg','02')}
-      ${shot(base+'3.jpg','03')}
-      ${shot(base+'4.jpg','04','shot-wide')}
-    </section>
+    ${galleryHtml}
 
     <section class="proj-text proj-result">
       <div class="proj-block"><h2>${u.result}</h2><p>${esc(t.result)}</p></div>
@@ -174,7 +136,7 @@ function render(){
   if(fc) fc.innerHTML = u.footer;
   document.documentElement.lang = lang;
   document.getElementById('lang-label').textContent = lang==='pl' ? 'EN' : 'PL';
-  document.title = t.name + ' — Portfolio';
+  document.title = t.name + ' — Max';
 }
 
 document.getElementById('lang-switch').addEventListener('click',()=>{

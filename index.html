@@ -3,7 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Moje Portfolio — Figma Designer</title>
+<meta name="description" content="Portfolio Maxa: grafika, web design i front-end. Projekty tworzone w Figmie oraz w HTML, CSS i JavaScript.">
+<meta name="theme-color" content="#EBE7E1">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:title" content="Max — Portfolio">
+<meta property="og:description" content="Portfolio Maxa: grafika, web design i front-end. Projekty tworzone w Figmie oraz w HTML, CSS i JavaScript.">
+<!-- og:image wymaga PEŁNEGO adresu, np. https://TWOJ_LOGIN.github.io/portfolio/assets/img/projekt-1/cover.jpg
+     Dodaj go po opublikowaniu strony: <meta property="og:image" content="https://..."> -->
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<title>Max — Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@300;400;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -19,7 +28,7 @@
     <li><a href="#about" data-i18n="nav-about">O Mnie</a></li>
     <li><a href="#contact" data-i18n="nav-contact">Kontakt</a></li>
   </ul>
-  <button id="lang-switch" aria-label="Switch language">
+  <button id="lang-switch" aria-label="Zmień język / Switch language">
     <span id="lang-label">PL</span>
   </button>
 </nav>
@@ -77,27 +86,22 @@
   </div>
   <div class="projects-grid">
     <div class="project-card">
-      <img class="project-img" src="assets/img/projekt-1/cover.jpg" alt="Projekt 1" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <img class="project-img" src="assets/img/projekt-1/cover.jpg" alt="Laptop z otwartą stroną portfolio z napisem MOJE PORTFOLIO" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
       <div class="project-placeholder" style="display:none"><div class="ph-inner"><div class="ph-num">01</div><div class="ph-label" data-i18n="proj-label">Projekt</div></div></div>
       <div class="project-overlay"></div>
-      <div class="project-info"><span class="project-tag">UI / Figma · 2024</span><div class="project-name" data-i18n="proj1-name">Projekt Główny</div></div>
+      <div class="project-info"><span class="project-tag" data-i18n="proj1-tag">Web</span><div class="project-name" data-i18n="proj1-name">Moje portfolio</div></div>
     </div>
     <div class="project-card">
-      <img class="project-img" src="assets/img/projekt-2/cover.jpg" alt="Projekt 1" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <img class="project-img" src="assets/img/projekt-2/cover.jpg" alt="Tablet z projektem strony WESSA: strona główna z rowerami" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
       <div class="project-placeholder"><div class="ph-inner"><div class="ph-num">02</div><div class="ph-label" data-i18n="proj-label">Projekt</div></div></div>
       <div class="project-overlay"></div>
-      <div class="project-info"><span class="project-tag">Branding · 2024</span><div class="project-name" data-i18n="proj2-name">Projekt Drugi</div></div>
+      <div class="project-info"><span class="project-tag" data-i18n="proj2-tag">UI / Figma</span><div class="project-name" data-i18n="proj2-name">WESSA</div></div>
     </div>
     <div class="project-card">
-      <img class="project-img" src="assets/img/projekt-3/cover.jpg" alt="Projekt 1" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <img class="project-img" src="assets/img/projekt-3/cover.jpg" alt="Monitor na biurku z plakatem Porsche 911 GT3 RS Manthey" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
       <div class="project-placeholder"><div class="ph-inner"><div class="ph-num">03</div><div class="ph-label" data-i18n="proj-label">Projekt</div></div></div>
       <div class="project-overlay"></div>
-      <div class="project-info"><span class="project-tag">Design System · 2023</span><div class="project-name" data-i18n="proj3-name">Projekt Trzeci</div></div>
-    </div>
-      <div class="project-card">
-      <div class="project-placeholder"><div class="ph-inner"><div class="ph-num">04</div><div class="ph-label" data-i18n="proj-label">Projekt</div></div></div>
-      <div class="project-overlay"></div>
-      <div class="project-info"><span class="project-tag">Design System · 2026</span><div class="project-name" data-i18n="proj3-name">Projekt Czwarty</div></div>
+      <div class="project-info"><span class="project-tag" data-i18n="proj3-tag">Grafika</span><div class="project-name" data-i18n="proj3-name">Plakaty samochodowe</div></div>
     </div>
   </div>
 </section>
@@ -157,11 +161,12 @@
 </div>
 
 <footer>
-  <span class="footer-copy">© 2025 — Portfolio</span>
+  <span class="footer-copy">© 2026 — Max</span>
   <ul class="footer-links">
-    <li><a href="#">Behance</a></li>
-    <li><a href="https://www.linkedin.com/in/maksym-petrushkevych-7367a8295/?isSelfProfile=true">LinkedIn</a></li>
-    <li><a href="#">Dribbble</a></li>
+    <!-- Dodaj tu swoje prawdziwe linki, np.:
+    <li><a href="https://www.linkedin.com/in/TWOJ_PROFIL" target="_blank" rel="noopener">LinkedIn</a></li>
+    <li><a href="https://github.com/TWOJ_LOGIN" target="_blank" rel="noopener">GitHub</a></li>
+    -->
   </ul>
 </footer>
 

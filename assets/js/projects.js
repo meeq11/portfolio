@@ -4,29 +4,23 @@ const T = {
     'nav-home':'Strona Główna','nav-work':'Projekty','nav-about':'O Mnie','nav-contact':'Kontakt',
     'pg-eyebrow':'Portfolio','pg-title':'Projekty',
     'pg-lead':'Wybór prac z zakresu UI/UX, brandingu i web designu.',
-    'f-all':'Wszystkie','f-ui':'UI / UX','f-branding':'Branding','f-web':'Web',
+    'f-all':'Wszystkie','f-ui':'UI / UX','f-graphics':'Grafika','f-web':'Web',
     'p-view':'Zobacz projekt →',
-    'p1-name':'Projekt Główny','p1-desc':'Interfejs aplikacji mobilnej — od wireframe\'ów po gotowy prototyp.',
-    'p2-name':'Projekt Drugi','p2-desc':'Identyfikacja wizualna: logo, paleta kolorów i typografia.',
-    'p3-name':'Projekt Trzeci','p3-desc':'Biblioteka komponentów w Figmie dla zespołu produktowego.',
-    'p4-name':'Projekt Czwarty','p4-desc':'Responsywna strona internetowa w HTML, CSS i JavaScript.',
-    'p5-name':'Projekt Piąty','p5-desc':'Materiały graficzne i kampania w mediach społecznościowych.',
-    'p6-name':'Projekt Szósty','p6-desc':'Landing page z animacjami i formularzem kontaktowym.',
-    'footer-copy':'© 2025 — Portfolio'
+    'p1-name':'Moje portfolio','p1-desc':'Strona portfolio zaprojektowana w Figmie i napisana od zera w HTML, CSS i JavaScript.','p1-tag':'Web',
+    'p2-name':'WESSA','p2-desc':'Projekt strony agencji handlowej z rowerami: strona główna, lista modeli, karta produktu, logowanie i koszyk.','p2-tag':'UI / Figma',
+    'p3-name':'Plakaty samochodowe','p3-desc':'Seria plakatów i tapet o samochodach sportowych w formie technicznej karty modelu.','p3-tag':'Grafika',
+    'footer-copy':'© 2026 — Max'
   },
   en: {
     'nav-home':'Home','nav-work':'Work','nav-about':'About','nav-contact':'Contact',
     'pg-eyebrow':'Portfolio','pg-title':'Projects',
     'pg-lead':'A selection of work in UI/UX, branding and web design.',
-    'f-all':'All','f-ui':'UI / UX','f-branding':'Branding','f-web':'Web',
+    'f-all':'All','f-ui':'UI / UX','f-graphics':'Graphics','f-web':'Web',
     'p-view':'View project →',
-    'p1-name':'Main Project','p1-desc':'Mobile app interface — from wireframes to a finished prototype.',
-    'p2-name':'Second Project','p2-desc':'Visual identity: logo, colour palette and typography.',
-    'p3-name':'Third Project','p3-desc':'A component library in Figma for a product team.',
-    'p4-name':'Fourth Project','p4-desc':'Responsive website built with HTML, CSS and JavaScript.',
-    'p5-name':'Fifth Project','p5-desc':'Graphic assets and a social media campaign.',
-    'p6-name':'Sixth Project','p6-desc':'Landing page with animations and a contact form.',
-    'footer-copy':'© 2025 — Portfolio'
+    'p1-name':'My portfolio','p1-desc':'A portfolio website designed in Figma and built from scratch with HTML, CSS and JavaScript.','p1-tag':'Web',
+    'p2-name':'WESSA','p2-desc':'Website design for a bicycle trading agency: home page, model list, product page, login and cart.','p2-tag':'UI / Figma',
+    'p3-name':'Car posters','p3-desc':'A series of posters and wallpapers about sports cars, styled as technical model cards.','p3-tag':'Graphics',
+    'footer-copy':'© 2026 — Max'
   }
 };
 
@@ -43,7 +37,7 @@ function applyLang(lang){
   if(fc) fc.innerHTML = dict['footer-copy'];
   document.documentElement.lang = lang;
   document.getElementById('lang-label').textContent = lang === 'pl' ? 'EN' : 'PL';
-  document.title = (lang === 'pl' ? 'Projekty' : 'Projects') + ' — Portfolio';
+  document.title = (lang === 'pl' ? 'Projekty' : 'Projects') + ' — Max';
   currentLang = lang;
   try{ localStorage.setItem('lang', lang); }catch(e){}
 }

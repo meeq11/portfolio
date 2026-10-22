@@ -3,7 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projekty — Moje Portfolio</title>
+<meta name="description" content="Wybrane projekty Maxa: strony internetowe, interfejsy zaprojektowane w Figmie i grafiki.">
+<meta name="theme-color" content="#EBE7E1">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:title" content="Projekty — Max">
+<meta property="og:description" content="Wybrane projekty Maxa: strony internetowe, interfejsy zaprojektowane w Figmie i grafiki.">
+<!-- og:image wymaga PEŁNEGO adresu, np. https://TWOJ_LOGIN.github.io/portfolio/assets/img/projekt-1/cover.jpg
+     Dodaj go po opublikowaniu strony: <meta property="og:image" content="https://..."> -->
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<title>Projekty — Max</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@300;400;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -17,7 +26,7 @@
     <li><a href="index.html#about" data-i18n="nav-about">O Mnie</a></li>
     <li><a href="index.html#contact" data-i18n="nav-contact">Kontakt</a></li>
   </ul>
-  <button id="lang-switch" aria-label="Switch language">
+  <button id="lang-switch" aria-label="Zmień język / Switch language">
     <span id="lang-label">EN</span>
   </button>
 </nav>
@@ -32,95 +41,62 @@
   <div class="filters" role="tablist">
     <button class="filter active" data-filter="all" data-i18n="f-all">Wszystkie</button>
     <button class="filter" data-filter="ui" data-i18n="f-ui">UI / UX</button>
-    <button class="filter" data-filter="branding" data-i18n="f-branding">Branding</button>
+    <button class="filter" data-filter="graphics" data-i18n="f-graphics">Grafika</button>
     <button class="filter" data-filter="web" data-i18n="f-web">Web</button>
   </div>
 
   <section class="pgrid" id="pgrid">
 
-      <article class="pcard" data-cat="ui">
-        <a class="pcard-media" href="project.html?id=1" aria-label="Projekt Główny">
-        <img class="pcard-img" src="assets/img/projekt-1/cover.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <article class="pcard" data-cat="web">
+        <a class="pcard-media" href="project.html?id=1" aria-label="Moje portfolio">
+        <img class="pcard-img" src="assets/img/projekt-1/cover.jpg" alt="Laptop z otwartą stroną portfolio z napisem MOJE PORTFOLIO" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="project-placeholder" style="display:none"><div class="ph-inner"><div class="ph-num">01</div></div></div>
         </a>
         <div class="pcard-body">
-          <span class="project-tag pcard-tag">UI / Figma · 2024</span>
-          <h3 class="pcard-name" data-i18n="p1-name">Projekt Główny</h3>
-          <p class="pcard-desc" data-i18n="p1-desc">Interfejs aplikacji mobilnej — od wireframe'ów po gotowy prototyp.</p>
+          <span class="project-tag pcard-tag" data-i18n="p1-tag">Web</span>
+          <h3 class="pcard-name" data-i18n="p1-name">Moje portfolio</h3>
+          <p class="pcard-desc" data-i18n="p1-desc">Strona portfolio zaprojektowana w Figmie i napisana od zera w HTML, CSS i JavaScript.</p>
           <a class="pcard-link" href="project.html?id=1" data-i18n="p-view">Zobacz projekt →</a>
         </div>
       </article>
 
-      <article class="pcard" data-cat="branding">
-        <a class="pcard-media" href="project.html?id=2" aria-label="Projekt Drugi">
-        <img class="pcard-img" src="assets/img/projekt-2/cover.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <article class="pcard" data-cat="ui">
+        <a class="pcard-media" href="project.html?id=2" aria-label="WESSA">
+        <img class="pcard-img" src="assets/img/projekt-2/cover.jpg" alt="Tablet z projektem strony WESSA: strona główna z rowerami" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="project-placeholder"><div class="ph-inner"><div class="ph-num">02</div></div></div>
         </a>
         <div class="pcard-body">
-          <span class="project-tag pcard-tag">Branding · 2024</span>
-          <h3 class="pcard-name" data-i18n="p2-name">Projekt Drugi</h3>
-          <p class="pcard-desc" data-i18n="p2-desc">Identyfikacja wizualna: logo, paleta kolorów i typografia.</p>
+          <span class="project-tag pcard-tag" data-i18n="p2-tag">UI / Figma</span>
+          <h3 class="pcard-name" data-i18n="p2-name">WESSA</h3>
+          <p class="pcard-desc" data-i18n="p2-desc">Projekt strony agencji handlowej z rowerami: strona główna, lista modeli, karta produktu, logowanie i koszyk.</p>
           <a class="pcard-link" href="project.html?id=2" data-i18n="p-view">Zobacz projekt →</a>
         </div>
       </article>
 
-      <article class="pcard" data-cat="ui">
-        <a class="pcard-media" href="project.html?id=3" aria-label="Projekt Trzeci">
-        <img class="pcard-img" src="assets/img/projekt-3/cover.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <article class="pcard" data-cat="graphics">
+        <a class="pcard-media" href="project.html?id=3" aria-label="Plakaty samochodowe">
+        <img class="pcard-img" src="assets/img/projekt-3/cover.jpg" alt="Monitor na biurku z plakatem Porsche 911 GT3 RS Manthey" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="project-placeholder"><div class="ph-inner"><div class="ph-num">03</div></div></div>
         </a>
         <div class="pcard-body">
-          <span class="project-tag pcard-tag">Design System · 2023</span>
-          <h3 class="pcard-name" data-i18n="p3-name">Projekt Trzeci</h3>
-          <p class="pcard-desc" data-i18n="p3-desc">Biblioteka komponentów w Figmie dla zespołu produktowego.</p>
+          <span class="project-tag pcard-tag" data-i18n="p3-tag">Grafika</span>
+          <h3 class="pcard-name" data-i18n="p3-name">Plakaty samochodowe</h3>
+          <p class="pcard-desc" data-i18n="p3-desc">Seria plakatów i tapet o samochodach sportowych w formie technicznej karty modelu.</p>
           <a class="pcard-link" href="project.html?id=3" data-i18n="p-view">Zobacz projekt →</a>
         </div>
       </article>
-
-      <article class="pcard" data-cat="web">
-        <a class="pcard-media" href="project.html?id=4" aria-label="Projekt Czwarty">
-        <div class="project-placeholder"><div class="ph-inner"><div class="ph-num">04</div></div></div>
-        </a>
-        <div class="pcard-body">
-          <span class="project-tag pcard-tag">Web · 2024</span>
-          <h3 class="pcard-name" data-i18n="p4-name">Projekt Czwarty</h3>
-          <p class="pcard-desc" data-i18n="p4-desc">Responsywna strona internetowa w HTML, CSS i JavaScript.</p>
-          <a class="pcard-link" href="project.html?id=4" data-i18n="p-view">Zobacz projekt →</a>
-        </div>
-      </article>
-
-      <article class="pcard" data-cat="branding">
-        <a class="pcard-media" href="project.html?id=5" aria-label="Projekt Piąty">
-        <div class="project-placeholder"><div class="ph-inner"><div class="ph-num">05</div></div></div>
-        </a>
-        <div class="pcard-body">
-          <span class="project-tag pcard-tag">Branding · 2023</span>
-          <h3 class="pcard-name" data-i18n="p5-name">Projekt Piąty</h3>
-          <p class="pcard-desc" data-i18n="p5-desc">Materiały graficzne i kampania w mediach społecznościowych.</p>
-          <a class="pcard-link" href="project.html?id=5" data-i18n="p-view">Zobacz projekt →</a>
-        </div>
-      </article>
-
-      <article class="pcard" data-cat="web">
-        <a class="pcard-media" href="project.html?id=6" aria-label="Projekt Szósty">
-        <div class="project-placeholder"><div class="ph-inner"><div class="ph-num">06</div></div></div>
-        </a>
-        <div class="pcard-body">
-          <span class="project-tag pcard-tag">Web · 2023</span>
-          <h3 class="pcard-name" data-i18n="p6-name">Projekt Szósty</h3>
-          <p class="pcard-desc" data-i18n="p6-desc">Landing page z animacjami i formularzem kontaktowym.</p>
-          <a class="pcard-link" href="project.html?id=6" data-i18n="p-view">Zobacz projekt →</a>
-        </div>
-      </article>
+  <!-- Kolejne projekty dodaj, kopiując całą kartę <article class="pcard"> powyżej
+       i zmieniając numer w project.html?id=N oraz folder zdjęć assets/img/projekt-N/ -->
   </section>
 </main>
 
 <footer>
-  <span class="footer-copy">© 2025 — Portfolio</span>
+  <span class="footer-copy">© 2026 — Max</span>
   <ul class="footer-links">
-    <li><a href="#">Behance</a></li>
-    <li><a href="https://www.linkedin.com/in/maksym-petrushkevych-7367a8295/?isSelfProfile=true">LinkedIn</a></li>
-    <li><a href="#">Dribbble</a></li>
+    <!-- Dodaj tu swoje prawdziwe linki, np.:
+    <li><a href="https://www.linkedin.com/in/TWOJ_PROFIL" target="_blank" rel="noopener">LinkedIn</a></li>
+    <li><a href="https://github.com/TWOJ_LOGIN" target="_blank" rel="noopener">GitHub</a></li>
+    -->
   </ul>
 </footer>
 
