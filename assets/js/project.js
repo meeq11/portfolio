@@ -37,7 +37,7 @@ const PROJECTS = [
       goal:'Creating my own website that shows my projects in one place. I wanted a simple, readable layout and expressive typography.',
       process:'I designed the layout in Figma first, then built the site from scratch: a pixel effect in the header, a PL/EN language switch, a project list with filters, project pages and a contact form.',
       result:'A responsive portfolio in two languages, with project pages and a form that sends messages by email.' } },
-  { id:2, tag:{pl:'UI / Figma', en:'UI / Figma'}, tools:'Figma', gallery:0,
+  { id:2, tag:{pl:'UI / Figma', en:'UI / Figma'}, tools:'Figma', gallery:4,
     pl:{ name:'WESSA', role:'Projekt interfejsu',
       lead:'Projekt strony agencji handlowej z rowerami: strona główna, lista modeli, karta produktu, logowanie i koszyk.',
       goal:'Zaprojektowanie nowoczesnej strony, na której łatwo znaleźć model roweru, zobaczyć jego opis i dodać go do koszyka.',
